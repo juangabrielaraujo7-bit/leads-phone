@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.astro/
+.vercel/
+.env
+.env.*
+artifacts/
+.impeccable/review/
+Logo Leads phone em fundo transparente.png
+snapinsta-1792147057894.mp4
+scripts/adapt-base.mjs
+scripts/prepare-services.mjs
+scripts/export-files.mjs

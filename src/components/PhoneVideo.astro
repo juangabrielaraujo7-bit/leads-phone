@@ -1,0 +1,9 @@
+---
+import { business } from '../data/business';
+import Icon from './Icon.astro';
+---
+<figure class="hero-phone-stage">
+  <div class="phone-frame"><span class="phone-speaker" aria-hidden="true"></span><div class="phone-screen"><video data-repair-video autoplay muted loop playsinline preload="metadata" poster={business.video.poster} width={business.video.width} height={business.video.height} aria-label="Vídeo real de manutenção em andamento na LEADS PHONE"><source src={business.video.src} type="video/mp4"/><img src={business.video.poster} width="540" height="960" alt="Registro de manutenção em andamento na LEADS PHONE"/></video></div><span class="phone-home" aria-hidden="true"></span></div>
+  <figcaption>Manutenção em andamento · registro real</figcaption>
+  <button type="button" class="video-toggle" data-video-toggle aria-label="Pausar vídeo de manutenção" aria-pressed="false"><Icon name="player-pause" size={15}/><span>Pausar vídeo</span></button>
+</figure>

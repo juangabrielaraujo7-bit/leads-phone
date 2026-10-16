@@ -1,0 +1,86 @@
+/* Real photographs retain their complete framing. Labels stay outside the image. */
+.reviews-layout{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.15fr);gap:48px;align-items:center}
+.reviews-copy{position:relative;z-index:1}
+.reviews-copy h2{font-size:clamp(30px,3.2vw,44px);line-height:1.16}
+.reviews-copy>.text-link{margin-top:18px}
+.google-summary{display:flex;align-items:center;gap:22px;margin-top:34px}
+.google-summary img{width:130px;height:auto}
+.google-summary>span{display:flex;flex-direction:column;border-left:1px solid #dbe5ee;padding-left:20px;line-height:1.5;color:#536472;font-size:11px}
+.google-summary strong{font-size:23px;letter-spacing:-.04em;color:var(--ink);font-weight:750}
+.review-dates-note{font-size:10px;line-height:1.7;margin-top:24px;color:#536472;max-width:310px}
+.review-motion{min-width:0;position:relative}
+.review-window{height:640px;overflow:hidden;perspective:1100px;mask-image:linear-gradient(to bottom,transparent,#000 9%,#000 91%,transparent)}
+.review-perspective{display:flex;gap:18px;transform:translateY(-70px) rotateX(7deg) rotateY(-8deg) rotateZ(6deg);transform-origin:center center;width:calc(100% - 55px);margin-left:28px}
+.review-lane{display:flex;flex-direction:column;gap:18px;flex:1;min-width:0}
+.review-lane.is-reversed{padding-top:65px}
+.review-group{display:flex;flex-direction:column;gap:18px;flex-shrink:0;animation:reviews-vertical 48s linear infinite}
+.is-reversed .review-group{animation-direction:reverse;animation-duration:54s}
+.review-card{display:flex;flex-direction:column;padding:22px;min-width:0;border:1px solid #dbe5ee;border-radius:14px;background:white;box-shadow:0 5px 15px #1b291604}
+.review-top{display:flex;align-items:center;justify-content:space-between;gap:10px;color:#536472}
+.review-rating{display:flex;gap:2px;color:#176cc3}
+.review-rating .icon{stroke-width:0}
+.review-card blockquote{font-size:13px;line-height:1.8;margin:18px 0;white-space:pre-line;letter-spacing:-.01em}
+.review-card figcaption{display:flex;flex-direction:column;gap:3px;margin-top:auto;padding-top:15px;border-top:1px solid #dbe5ee;line-height:1.6}
+.review-card figcaption strong{font-size:12px;font-weight:750;color:var(--ink);overflow-wrap:anywhere}
+.review-card figcaption span{font-size:10px;color:#536472}
+.review-card .review-excerpt{font-size:10px;margin:-8px 0 17px;color:#536472}
+.review-pause{display:none;align-items:center;gap:7px;margin:14px 0 0 auto;border:0;background:transparent;min-height:44px;min-width:44px;justify-content:center;padding:5px 8px;color:#536472;font-size:11px}
+.js .review-pause{display:flex}
+html:not(.js) .review-group{animation:none}
+html:not(.js) .review-group[aria-hidden="true"]{display:none}
+html:not(.js) .review-window{height:auto;mask-image:none}
+html:not(.js) .review-perspective{transform:none;width:100%}
+html:not(.js) .review-lane{padding-top:0}
+.review-motion:is(:hover,:focus-within,[data-paused="true"]) .review-group{animation-play-state:paused}
+@keyframes reviews-vertical{to{transform:translateY(calc(-100% - 18px))}}
+@keyframes reviews-horizontal{to{transform:translateX(calc(-100% - 16px))}}
+@media(max-width:1023px) and (min-width:768px){.reviews-layout{gap:25px;grid-template-columns:.85fr 1.15fr}.review-card{padding:18px}.review-card blockquote{font-size:12px}.review-window{height:660px}.review-perspective{gap:12px}}
+@media(max-width:767px){
+  .reviews-layout{grid-template-columns:1fr;gap:32px}.reviews-copy h2{font-size:32px}.google-summary{margin-top:25px}.google-summary img{width:115px}
+  .review-window{height:auto;perspective:none;mask-image:linear-gradient(to right,transparent,#000 3%,#000 97%,transparent)}
+  .review-perspective{display:flex;flex-direction:column;transform:none;width:100%;margin-left:0;gap:16px}
+  .review-lane,.review-group{flex-direction:row;gap:16px;flex:none;width:max-content}.review-lane.is-reversed{padding-top:0}
+  .review-group{animation-name:reviews-horizontal;animation-duration:48s}.is-reversed .review-group{animation-duration:54s}
+  .review-card{width:min(290px,78vw);padding:22px;flex:none}.review-card blockquote{font-size:13px;line-height:1.75}.review-card figcaption strong{font-size:12px}
+  .review-dates-note{max-width:none;margin-top:20px}
+  html:not(.js) .review-lane{width:100%;overflow-x:auto}
+}
+@media(prefers-reduced-motion:reduce),print{
+  .review-window{height:auto;mask-image:none;perspective:none}.review-perspective{transform:none;width:100%;margin-left:0;align-items:stretch}.review-lane{padding:0!important;gap:0}.review-group{animation:none!important}.review-group[aria-hidden="true"]{display:none}.review-pause,.js .review-pause{display:none}
+}
+@media(max-width:767px) and (prefers-reduced-motion:reduce){.review-lane{width:100%;overflow-x:auto;padding-bottom:8px!important}.review-group{width:max-content}}
+.results-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.result-card{min-width:0;border:1px solid #ffffff40;border-radius:16px;overflow:hidden;background:#ffffff}
+.gallery-trigger{overflow:hidden;background:#176cc3;cursor:zoom-in}
+.gallery-trigger img{width:100%;height:auto;aspect-ratio: .82;object-fit:contain;border-radius:0}
+.gallery-trigger:focus-visible{outline-offset:-5px}
+.result-card figcaption{padding:23px;margin:0}
+.result-title{display:flex;gap:12px;justify-content:space-between;align-items:center}
+.result-title h3{font-size:19px;line-height:1.3;letter-spacing:-.025em}
+.result-title>.icon{color:#536472}
+.result-legend{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px;padding-top:17px;border-top:1px solid #dbe5ee}
+.result-legend span{display:flex;flex-direction:column;color:#e5f1ff;font-size:10px;line-height:1.8}
+.result-legend strong{font-size:12px;color:#ffffff}
+.result-legend span:first-child strong{color:var(--blue)}
+#gallery-dialog{padding:52px 20px 20px;width:min(760px,95vw)}
+.gallery-image img{max-height:75vh;max-height:75dvh;width:100%;object-fit:contain}
+.gallery-caption{font-size:12px;color:#e5f1ff;margin-top:14px;text-align:center}
+.supplied-brands{max-width:1120px;gap:45px;margin-block:48px 30px}
+.supplied-brands li{min-width:0;min-height:74px}
+.supplied-brands img{width:100%;height:54px;object-fit:contain}
+.supplied-brands .brand-iphone{max-width:180px;height:45px}
+.supplied-brands .brand-samsung{max-width:185px;height:33px}
+.supplied-brands .brand-motorola{max-width:210px;height:48px}
+.supplied-brands .brand-xiaomi{max-width:190px;height:53px}
+/* Expanded navigation remains on a single row with the new section links. */
+@media(min-width:1024px){.main-nav{gap:clamp(10px,1.5vw,22px)}.header-inner{gap:24px}.main-nav>a[href="/#duvidas"]{display:none}}
+@media(max-width:1199px){.review-card{padding:22px}.result-card figcaption{padding:19px}.result-title h3{font-size:17px}.supplied-brands{gap:30px}}
+@media(max-width:767px){
+  .results-grid{grid-template-columns:1fr;gap:24px;max-width:480px;margin-inline:auto}
+  .result-card figcaption{padding:22px}.result-title h3{font-size:20px}
+  .result-legend span{font-size:11px}.result-legend strong{font-size:13px}
+  .review-dates-note{font-size:10px;margin-top:20px}
+  .supplied-brands{gap:28px 25px;margin-block:34px 24px}
+  .supplied-brands li{min-height:60px}.supplied-brands .brand-iphone{height:34px}.supplied-brands .brand-samsung{height:23px}.supplied-brands .brand-motorola{height:34px}.supplied-brands .brand-xiaomi{height:39px}
+}
+

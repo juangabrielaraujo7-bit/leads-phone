@@ -1,0 +1,9 @@
+import {createServer} from 'node:http';
+import {readFile,stat} from 'node:fs/promises';
+import path from 'node:path';
+const root=path.resolve('dist');
+const config=JSON.parse(await readFile('vercel.json','utf8'));
+const headers=Object.fromEntries(config.headers[0].headers.map(h=>[h.key,h.value]));
+const types={'.svg':'image/svg+xml','.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.webp':'image/webp','.png':'image/png','.jpg':'image/jpeg','.woff2':'font/woff2','.xml':'application/xml','.txt':'text/plain','.mp4':'video/mp4'};
+export const server=createServer(async(req,res)=>{try{const url=new URL(req.url,'http://localhost');let file=path.resolve(root,'.'+decodeURIComponent(url.pathname));if(!file.startsWith(root+path.sep)&&file!==root){res.writeHead(403);res.end();return;}if((await stat(file)).isDirectory())file=path.join(file,'index.html');const body=await readFile(file);const range=req.headers.range?.match(/^bytes=(\d+)-(\d*)$/);if(range){const start=Number(range[1]),end=range[2]?Math.min(Number(range[2]),body.length-1):body.length-1;if(start>end){res.writeHead(416);res.end();return;}res.writeHead(206,{...headers,'Content-Type':types[path.extname(file)]||'application/octet-stream','Accept-Ranges':'bytes','Content-Range':`bytes ${start}-${end}/${body.length}`,'Content-Length':end-start+1});res.end(body.subarray(start,end+1));}else{res.writeHead(200,{...headers,'Content-Type':types[path.extname(file)]||'application/octet-stream','Accept-Ranges':'bytes','Content-Length':body.length});res.end(body);}}catch{res.writeHead(404,{'Content-Type':'text/html; charset=utf-8'});res.end(await readFile(path.join(root,'404.html')));}});
+if(process.argv[1]?.endsWith('serve.mjs'))server.listen(4323,'127.0.0.1',()=>console.log('LEADS PHONE preview: http://127.0.0.1:4323/'));

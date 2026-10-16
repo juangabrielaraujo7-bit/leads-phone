@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-16T11:39:55.000Z",
+  "title": "Design System: LEADS PHONE",
+  "extensions": {
+    "colorMeta": {
+      "blue": {
+        "role": "primary",
+        "displayName": "Azul LEADS PHONE",
+        "tonalRamp": [
+          "oklch(15% 0.15 250)",
+          "oklch(26% 0.15 250)",
+          "oklch(38% 0.15 250)",
+          "oklch(49% 0.15 250)",
+          "oklch(61% 0.15 250)",
+          "oklch(72% 0.15 250)",
+          "oklch(84% 0.15 250)",
+          "oklch(95% 0.15 250)"
+        ],
+        "rampPurpose": "Faixa exploratória sintetizada para o painel; não substitui as cores normativas nem autoriza novos fundos de seção."
+      },
+      "blue-hover": {
+        "role": "primary",
+        "displayName": "Azul de hover",
+        "tonalRamp": [
+          "oklch(15% 0.15 250)",
+          "oklch(26% 0.15 250)",
+          "oklch(38% 0.15 250)",
+          "oklch(49% 0.15 250)",
+          "oklch(61% 0.15 250)",
+          "oklch(72% 0.15 250)",
+          "oklch(84% 0.15 250)",
+          "oklch(95% 0.15 250)"
+        ],
+        "rampPurpose": "Faixa exploratória sintetizada para o painel; não substitui as cores normativas nem autoriza novos fundos de seção."
+      },
+      "blue-on-white": {
+        "role": "primary",
+        "displayName": "Azul de texto em CTA branco",
+        "tonalRamp": [
+          "oklch(15% 0.14 250)",
+          "oklch(26% 0.14 250)",
+          "oklch(38% 0.14 250)",
+          "oklch(49% 0.14 250)",
+          "oklch(61% 0.14 250)",
+          "oklch(72% 0.14 250)",
+          "oklch(84% 0.14 250)",
+          "oklch(95% 0.14 250)"
+        ],
+        "rampPurpose": "Faixa exploratória sintetizada para o painel; não substitui as cores normativas nem autoriza novos fundos de seção."
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta",
+        "tonalRamp": [
+          "oklch(15% 0.025 240)",
+          "oklch(26% 0.025 240)",
+          "oklch(38% 0.025 240)",
+          "oklch(49% 0.025 240)",
+          "oklch(61% 0.025 240)",
+          "oklch(72% 0.025 240)",
+          "oklch(84% 0.025 240)",
+          "oklch(95% 0.025 240)"
+        ],
+        "rampPurpose": "Faixa exploratória sintetizada para o painel; não substitui as cores normativas nem autoriza novos fundos de seção."
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Branco",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ],
+        "rampPurpose": "Faixa exploratória sintetizada para o painel; não substitui as cores normativas nem autoriza novos fundos de seção."
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Texto secundário",
+        "tonalRamp": [
+          "oklch(15% 0.025 240)",
+          "oklch(26% 0.025 240)",
+          "oklch(38% 0.025 240)",
+          "oklch(49% 0.025 240)",
+          "oklch(61% 0.025 240)",
+          "oklch(72% 0.025 240)",
+          "oklch(84% 0.025 240)",
+          "oklch(95% 0.025 240)"
+        ],
+        "rampPurpose": "Faixa exploratória sintetizada para o painel; não substitui as cores normativas nem autoriza novos fundos de seção."
+      },
+      "muted-on-blue": {
+        "role": "neutral",
+        "displayName": "Texto claro sobre azul",
+        "tonalRamp": [
+          "oklch(15% 0.025 250)",
+          "oklch(26% 0.025 250)",
+          "oklch(38% 0.025 250)",
+          "oklch(49% 0.025 250)",
+          "oklch(61% 0.025 250)",
+          "oklch(72% 0.025 250)",
+          "oklch(84% 0.025 250)",
+          "oklch(95% 0.025 250)"
+        ],
+        "rampPurpose": "Faixa exploratória sintetizada para o painel; não substitui as cores normativas nem autoriza novos fundos de seção."
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Borda clara",
+        "tonalRamp": [
+          "oklch(15% 0.015 250)",
+          "oklch(26% 0.015 250)",
+          "oklch(38% 0.015 250)",
+          "oklch(49% 0.015 250)",
+          "oklch(61% 0.015 250)",
+          "oklch(72% 0.015 250)",
+          "oklch(84% 0.015 250)",
+          "oklch(95% 0.015 250)"
+        ],
+        "rampPurpose": "Faixa exploratória sintetizada para o painel; não substitui as cores normativas nem autoriza novos fundos de seção."
+      },
+      "line-on-blue": {
+        "role": "neutral",
+        "displayName": "Borda branca translúcida",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ],
+        "rampPurpose": "Faixa exploratória sintetizada para o painel; não substitui as cores normativas nem autoriza novos fundos de seção."
+      },
+      "pale-surface": {
+        "role": "neutral",
+        "displayName": "Superfície azul muito clara",
+        "tonalRamp": [
+          "oklch(15% 0.02 250)",
+          "oklch(26% 0.02 250)",
+          "oklch(38% 0.02 250)",
+          "oklch(49% 0.02 250)",
+          "oklch(61% 0.02 250)",
+          "oklch(72% 0.02 250)",
+          "oklch(84% 0.02 250)",
+          "oklch(95% 0.02 250)"
+        ],
+        "rampPurpose": "Faixa exploratória sintetizada para o painel; não substitui as cores normativas nem autoriza novos fundos de seção."
+      },
+      "media-surface": {
+        "role": "neutral",
+        "displayName": "Fundo de mídia",
+        "tonalRamp": [
+          "oklch(15% 0.015 250)",
+          "oklch(26% 0.015 250)",
+          "oklch(38% 0.015 250)",
+          "oklch(49% 0.015 250)",
+          "oklch(61% 0.015 250)",
+          "oklch(72% 0.015 250)",
+          "oklch(84% 0.015 250)",
+          "oklch(95% 0.015 250)"
+        ],
+        "rampPurpose": "Faixa exploratória sintetizada para o painel; não substitui as cores normativas nem autoriza novos fundos de seção."
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Hero",
+        "purpose": "Título principal preservando as quebras da composição."
+      },
+      "headline": {
+        "displayName": "Título de seção",
+        "purpose": "Hierarquia das seções."
+      },
+      "title": {
+        "displayName": "Título de serviço",
+        "purpose": "Identificação de serviço nos cards."
+      },
+      "body": {
+        "displayName": "Corpo",
+        "purpose": "Base global, com tamanhos locais conforme o componente."
+      },
+      "button": {
+        "displayName": "Ação",
+        "purpose": "Texto das ações padrão."
+      },
+      "label": {
+        "displayName": "Sobrelinha",
+        "purpose": "Rótulo de seção em caixa alta; não confundir com selo de demonstração."
+      }
+    },
+    "shadows": [
+      {
+        "name": "service-hover",
+        "value": "0 10px 24px #263c1c0a",
+        "purpose": "Sombra discreta apenas no hover do card de serviço."
+      },
+      {
+        "name": "dropdown",
+        "value": "0 20px 40px #0003",
+        "purpose": "Separação do menu temporário."
+      },
+      {
+        "name": "phone-frame",
+        "value": "8px 16px 25px #063a6c40, inset -3px 0 2px #d6e2ec80, inset 3px 0 2px #d6e2ec60",
+        "purpose": "Volume concentrado no smartphone."
+      }
+    ],
+    "motion": [
+      {
+        "name": "button",
+        "value": ".18s",
+        "purpose": "Mudanças de fundo, borda e transformação."
+      },
+      {
+        "name": "service-image",
+        "value": ".25s",
+        "purpose": "Deslocamento de imagem no hover."
+      },
+      {
+        "name": "carousel",
+        "value": ".5s ease",
+        "purpose": "Transformação, opacidade e desfoque entre slides."
+      },
+      {
+        "name": "review-lane",
+        "value": "48s linear infinite",
+        "purpose": "Movimento contínuo de uma faixa de avaliações."
+      },
+      {
+        "name": "review-reverse-lane",
+        "value": "54s linear infinite reverse",
+        "purpose": "Movimento inverso da segunda faixa."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation:none!important; transition:none!important",
+        "purpose": "Respeita prefers-reduced-motion; o smartphone também perde a rotação."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "small-phone-max",
+        "value": "359px"
+      },
+      {
+        "name": "single-service-column-max",
+        "value": "599px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "767px"
+      },
+      {
+        "name": "collapsed-nav-max",
+        "value": "1023px"
+      },
+      {
+        "name": "compact-desktop-max",
+        "value": "1199px"
+      },
+      {
+        "name": "wide-min",
+        "value": "1500px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ação principal em superfície branca.",
+      "html": "<button class=\"ds-button\">Falar no WhatsApp</button>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:13px 22px;border:1px solid transparent;border-radius:var(--button-radius,8px);font-family:var(--font,'Manrope Variable',Manrope,Arial,sans-serif);font-size:14px;font-weight:750;line-height:1.4;text-decoration:none;cursor:pointer;transition:background .18s,transform .18s,border-color .18s}.ds-button:active{transform:translateY(1px)}.ds-button:focus-visible{outline:3px solid var(--blue,#176cc3);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}.ds-button{background:var(--blue,#176cc3);color:white}.ds-button:hover{background:#125cab}"
+    },
+    {
+      "name": "Button on Blue",
+      "kind": "button",
+      "refersTo": "button-on-blue",
+      "description": "Ação principal em seção azul.",
+      "html": "<div class=\"ds-blue-surface\"><button class=\"ds-button\">Falar no WhatsApp</button></div>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:13px 22px;border:1px solid transparent;border-radius:var(--button-radius,8px);font-family:var(--font,'Manrope Variable',Manrope,Arial,sans-serif);font-size:14px;font-weight:750;line-height:1.4;text-decoration:none;cursor:pointer;transition:background .18s,transform .18s,border-color .18s}.ds-button:active{transform:translateY(1px)}.ds-button:focus-visible{outline:3px solid var(--blue,#176cc3);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}.ds-button{background:white;color:#145fa9}.ds-button:hover{background:#e5f1ff}.ds-blue-surface{padding:20px;background:var(--blue,#176cc3)}.ds-button:focus-visible{outline-color:white}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Ação secundária em seção azul.",
+      "html": "<div class=\"ds-blue-surface\"><button class=\"ds-button\">Ver serviços</button></div>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:13px 22px;border:1px solid transparent;border-radius:var(--button-radius,8px);font-family:var(--font,'Manrope Variable',Manrope,Arial,sans-serif);font-size:14px;font-weight:750;line-height:1.4;text-decoration:none;cursor:pointer;transition:background .18s,transform .18s,border-color .18s}.ds-button:active{transform:translateY(1px)}.ds-button:focus-visible{outline:3px solid var(--blue,#176cc3);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}.ds-button{background:transparent;color:white;border-color:#ffffff80}.ds-button:hover{background:#ffffff1a;border-color:white}.ds-blue-surface{padding:20px;background:var(--blue,#176cc3)}.ds-button:focus-visible{outline-color:white}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Ação secundária em superfície branca.",
+      "html": "<button class=\"ds-button\">Confirmar atendimento</button>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:13px 22px;border:1px solid transparent;border-radius:var(--button-radius,8px);font-family:var(--font,'Manrope Variable',Manrope,Arial,sans-serif);font-size:14px;font-weight:750;line-height:1.4;text-decoration:none;cursor:pointer;transition:background .18s,transform .18s,border-color .18s}.ds-button:active{transform:translateY(1px)}.ds-button:focus-visible{outline:3px solid var(--blue,#176cc3);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}.ds-button{background:transparent;color:var(--ink,#182632);border-color:#9aafc1}.ds-button:hover{background:#edf5fc}"
+    },
+    {
+      "name": "Dark Button",
+      "kind": "button",
+      "refersTo": "button-dark",
+      "description": "Variante usada para abrir a rota na localização.",
+      "html": "<button class=\"ds-button\">Como chegar</button>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:13px 22px;border:1px solid transparent;border-radius:var(--button-radius,8px);font-family:var(--font,'Manrope Variable',Manrope,Arial,sans-serif);font-size:14px;font-weight:750;line-height:1.4;text-decoration:none;cursor:pointer;transition:background .18s,transform .18s,border-color .18s}.ds-button:active{transform:translateY(1px)}.ds-button:focus-visible{outline:3px solid var(--blue,#176cc3);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}.ds-button{background:var(--ink,#182632);color:white}.ds-button:hover{background:#125cab}"
+    },
+    {
+      "name": "Service Card",
+      "kind": "card",
+      "refersTo": "service-card",
+      "description": "Estrutura de serviço com mídia ilustrativa, ícone, descrição e ações.",
+      "html": "<article class=\"ds-service\"><div class=\"ds-media\"><svg width=\"70\" height=\"110\" viewBox=\"0 0 70 110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><rect x=\"12\" y=\"4\" width=\"46\" height=\"98\" rx=\"8\"/><path d=\"M28 11h14M30 94h10\"/></svg><span>Ilustração</span></div><div class=\"ds-body\"><div class=\"ds-icon\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><rect x=\"6\" y=\"2\" width=\"12\" height=\"20\" rx=\"2\"/><path d=\"M11 18h2\"/></svg></div><h3>Troca de tela</h3><p>Consulte as opções de reparo para o seu aparelho.</p><div class=\"ds-actions\"><a href=\"#servico\">Ver detalhes</a><a class=\"ds-whatsapp\" href=\"#contato\">WhatsApp</a></div></div></article>",
+      "css": ".ds-service{max-width:360px;overflow:hidden;border:1px solid var(--line,#dbe5ee);border-radius:var(--radius,16px);background:white;color:var(--ink,#182632);font-family:var(--font,Manrope,Arial,sans-serif);transition:border-color .18s,box-shadow .18s}.ds-service:hover{border-color:#8ab4df;box-shadow:0 10px 24px #263c1c0a}.ds-media{height:226px;display:flex;align-items:center;justify-content:center;background:#f0f6fc;position:relative;color:#536472}.ds-media>svg{transition:transform .25s}.ds-service:hover .ds-media>svg{transform:translateY(-3px)}.ds-media>span{position:absolute;bottom:10px;right:12px;font-size:9px}.ds-body{padding:0 25px 24px}.ds-icon{position:relative;display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line,#dbe5ee);border-radius:10px;background:white;color:var(--blue,#176cc3);margin-top:-22px;margin-bottom:19px}.ds-body h3{font-size:20px;font-weight:800;line-height:1.25;letter-spacing:-.035em;margin:0}.ds-body p{font-size:13px;line-height:1.8;color:var(--muted,#536472);margin:13px 0 0;min-height:71px}.ds-actions{display:flex;justify-content:space-between;align-items:center;gap:10px;border-top:1px solid #dbe5ee;margin-top:23px;padding-top:15px}.ds-actions a{display:inline-flex;align-items:center;min-height:44px;color:inherit;text-decoration:none;font-size:12px;font-weight:800}.ds-actions a:hover{text-decoration:underline}.ds-actions .ds-whatsapp{border:1px solid #dbe5ee;background:#f0f6fc;border-radius:6px;padding:9px 10px;color:#1760a8}.ds-whatsapp:hover{background:#e3f0ff;border-color:#8ab4df}.ds-actions a:focus-visible{outline:3px solid var(--blue,#176cc3);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-service,.ds-media>svg{transition:none}.ds-service:hover .ds-media>svg{transform:none}}"
+    },
+    {
+      "name": "Illustrative Review",
+      "kind": "card",
+      "refersTo": "review-card",
+      "description": "Avaliação de demonstração com identificação explícita de conteúdo fictício.",
+      "html": "<figure class=\"ds-review\"><div class=\"ds-review-top\"><span class=\"ds-stars\" aria-label=\"5 de 5 estrelas\">★★★★★</span><span class=\"ds-demo\">Exemplo ilustrativo</span></div><blockquote>Depoimento fictício para demonstrar a apresentação.</blockquote><figcaption><strong>Cliente ilustrativo</strong><span>Conteúdo de demonstração</span></figcaption></figure>",
+      "css": ".ds-review{display:flex;flex-direction:column;width:280px;margin:0;padding:22px;border:1px solid #dbe5ee;border-radius:14px;background:white;color:var(--ink,#182632);font-family:var(--font,Manrope,Arial,sans-serif)}.ds-review-top{display:flex;justify-content:space-between;align-items:center;gap:10px}.ds-stars{color:var(--blue,#176cc3);font-size:15px;white-space:nowrap}.ds-demo{font-size:10px;font-weight:750;color:#1760a8}.ds-review blockquote{font-size:13px;line-height:1.8;margin:18px 0;letter-spacing:-.01em}.ds-review figcaption{display:flex;flex-direction:column;gap:3px;border-top:1px solid #dbe5ee;padding-top:15px;line-height:1.6}.ds-review strong{font-size:12px;font-weight:750}.ds-review figcaption span{font-size:10px;color:#536472}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "description": "Navegação branca e compacta com ação principal azul.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navegação de exemplo\"><a href=\"#servicos\">Serviços</a><a href=\"#resultados\">Antes e depois</a><a href=\"#localizacao\">Localização</a><a class=\"ds-nav-cta\" href=\"#contato\">Falar no WhatsApp</a></nav>",
+      "css": ".ds-nav{display:flex;flex-wrap:wrap;align-items:center;gap:clamp(10px,1.5vw,22px);padding:18px;background:white;color:var(--ink,#182632);font-family:var(--font,Manrope,Arial,sans-serif);font-size:12px;font-weight:650}.ds-nav a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;color:inherit}.ds-nav a:hover{color:var(--blue,#176cc3)}.ds-nav .ds-nav-cta{background:var(--blue,#176cc3);color:white;border-radius:8px;padding:10px 15px;min-height:42px;font-weight:750;transition:background .18s}.ds-nav .ds-nav-cta:hover{background:#125cab;color:white}.ds-nav a:focus-visible{outline:3px solid var(--blue,#176cc3);outline-offset:5px}.ds-nav-cta:active{transform:translateY(1px)}@media(prefers-reduced-motion:reduce){.ds-nav .ds-nav-cta{transition:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Continuidade Kacell, identidade LEADS PHONE",
+    "overview": "A direção é a continuidade visual explicitamente pedida: preservar composição, tipografia, componentes, efeitos e responsividade da base Kacell. A identidade própria aparece na marca LEADS PHONE, na alternância de branco e azul e no material real da assistência. Esta descrição registra a implementação; não propõe uma nova linguagem visual.\n\nO conjunto combina títulos fortes, leitura direta, superfícies claras e seções azuis amplas. O relevo fica concentrado no celular do hero e nos efeitos herdados de carrossel e avaliações. Fotografias, vídeo e rótulos devem conservar seu contexto e sua legibilidade.",
+    "keyCharacteristics": [
+      "Manrope em toda a interface, com títulos pesados e espaçamento compacto entre letras.",
+      "Alternância de seções brancas e azuis; nenhum fundo de seção azul-marinho.",
+      "Cantos suaves, bordas leves e ícones Tabler de traço fino.",
+      "Vídeo real de manutenção dentro de uma moldura de smartphone.",
+      "Exemplos de apresentação sempre identificados como ilustrativos."
+    ],
+    "rules": [
+      {
+        "name": "The Alternating Surfaces Rule",
+        "body": "Preserve a alternância branca/azul existente. O nome legado `dark` no código significa azul da identidade, nunca azul-marinho.",
+        "section": "colors"
+      },
+      {
+        "name": "The Contrast Rule",
+        "body": "Em áreas azuis, use títulos e ícones brancos, texto auxiliar claro e ações principais brancas com texto azul. Em áreas brancas, use texto escuro e ações azuis com texto branco.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "**Do** preservar composição, Manrope, componentes, ícones Tabler e efeitos herdados da Kacell.",
+      "**Do** manter branco e azul alternados com o contraste definido para cada superfície.",
+      "**Do** manter o vídeo real no smartphone e o texto antes dele no mobile.",
+      "**Do** conservar rótulos legíveis de demonstração em resultados, avaliações e acessórios ilustrativos.",
+      "**Do** preservar imagens completas, controles de pausa, foco visível e movimento reduzido."
+    ],
+    "donts": [
+      "**Don't** introduzir fundos de seção azul-marinho ou reinterpretar `dark` como uma nova cor escura.",
+      "**Don't** substituir o sistema herdado por outro conceito, família tipográfica ou composição.",
+      "**Don't** remover rótulos de exemplo ou apresentar avaliações fictícias como prova social real.",
+      "**Don't** espalhar o relevo do smartphone por todos os cards ou recortar imagens para preencher molduras."
+    ]
+  }
+}
