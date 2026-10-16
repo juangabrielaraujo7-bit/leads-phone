@@ -1,0 +1,62 @@
+/* Requested hero exception: black with cyan streaks, no dot/noise texture. */
+.hero.hero-with-media{background:#030609;background-image:none}
+.elegant-dark-pattern{position:relative;isolation:isolate;width:100%;overflow:hidden;background:#030609}
+.elegant-light-field{position:absolute;inset:0;z-index:-1;overflow:hidden;background:radial-gradient(100% 100% at 0 0,#2e2e2e 0%,#000 100%);mask-image:radial-gradient(125% 100% at 0 0,#000 0%,#00000039 88.2883%,transparent 100%)}
+.elegant-streak{position:absolute;inset:-20% -10%;opacity:.2;background:linear-gradient(#00cfff,transparent);transform:skewX(45deg);pointer-events:none}
+.elegant-streak-one{mask-image:linear-gradient(90deg,transparent 0%,#000 20%,transparent 36%,#000 55%,#0002 67%,#000 78%,transparent 97%)}
+.elegant-streak-two{mask-image:linear-gradient(90deg,transparent 11%,#000 25%,#0009 41%,#0002 67%,#000 78%,transparent 97%)}
+.elegant-streak-three{mask-image:linear-gradient(90deg,transparent 9%,#000 20%,#0009 28%,#0007 40%,#000 48%,#0004 54%,#0002 78%,#000 88%,transparent 97%)}
+.elegant-streak-four{mask-image:linear-gradient(90deg,transparent 0%,#000 17%,#0009 26%,#000 35%,transparent 47%,#0002 69%,#000 79%,transparent 97%)}
+.elegant-streak-five{mask-image:linear-gradient(90deg,transparent 0%,#000 20%,#0009 27%,#000 42%,transparent 48%,#0002 67%,#000 74%,#000 82%,#0008 88%,transparent 97%)}
+.elegant-pattern-content{position:relative;z-index:1}
+.hero-with-media .hero-inner{min-height:630px;padding-block:48px}
+.hero .button-blue{background:#25c5ff;color:#061723;border-color:#25c5ff;box-shadow:0 5px 22px #00bfff1c}.hero .button-blue:hover{background:#76dfff}.hero .button-ghost{background:#ffffff05;border-color:#ffffff50}.hero .button-ghost:hover{background:#ffffff12}.hero-with-media h1>span{color:#fff}
+.hero-phone-stage{perspective:1200px;gap:17px;isolation:isolate}
+.hero-phone-stage::before{width:94%;height:91%;top:0;background:radial-gradient(ellipse at 55% 52%,#00baff45 0%,#008cff22 35%,transparent 70%);filter:blur(20px);opacity:1}
+.phone-frame{width:260px;padding:8px;border:1px solid #9caebc;border-radius:39px;background:linear-gradient(110deg,#cbd4dd 0%,#697885 2%,#131c25 5%,#414f5b 49%,#b5c3cf 93%,#1a2937 97%,#8ca1b4 100%);box-shadow:1px 0 0 #ebf5ff99,inset 1px 1px 1px #eef7ffcc,inset -2px -1px 2px #09131b,6px 3px 0 #273745,8px 4px 0 #9caebb,10px 7px 9px #000b,0 0 13px #08c9ff9c,0 0 39px #009dff55,0 20px 65px #007bff40;transform:rotateX(3deg) rotateY(-15deg) rotateZ(5deg);transform-style:preserve-3d}
+.phone-frame::before{inset:3px;border:1px solid #e0efff30;background:none;width:auto;height:auto;border-radius:35px;pointer-events:none;z-index:3}
+.phone-frame::after{top:auto;bottom:24px;left:auto;right:-7px;width:7px;height:3px;background:#152330;border-radius:0}
+.phone-screen{position:relative;isolation:isolate;border-radius:31px;overflow:hidden;background:#05080b;box-shadow:0 0 0 2px #060a0f,0 0 0 3px #a2b7c538}
+.phone-screen video{aspect-ratio:9/16;object-fit:contain;border-radius:inherit}
+.phone-camera-island{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:72px;height:18px;border-radius:20px;background:#020305;box-shadow:0 0 0 1px #000a,inset 0 1px 1px #52627066;z-index:3}
+.phone-camera-island>span{position:absolute;right:7px;top:5px;width:8px;height:8px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#566c9d 0%,#142341 24%,#040914 55%);box-shadow:0 0 0 1px #1b2538}
+.phone-glass{position:absolute;inset:0;border-radius:inherit;background:linear-gradient(112deg,#eef8ff13 0%,transparent 23%,transparent 65%,#eef8ff08 79%,#e5f4ff12 100%);box-shadow:inset 0 1px 2px #fff7;pointer-events:none;z-index:2}
+.phone-home{left:35%;bottom:7px;width:30%;height:3px;background:#f2f7fcdd;box-shadow:0 1px 3px #0008;z-index:3}
+.phone-side{position:absolute;display:block;width:4px;background:linear-gradient(90deg,#c4d2de,#344b5d 70%,#90a4b3);border-radius:2px;box-shadow:0 1px 1px #0008}
+.phone-side-volume{left:-4px;top:85px;height:55px}.phone-side-power{right:-10px;top:106px;height:53px}
+.phone-antenna{position:absolute;width:5px;height:3px;background:#172835;z-index:4}.phone-antenna-top{left:-1px;top:34px}.phone-antenna-bottom{left:-1px;bottom:29px}
+.hero-phone-stage figcaption{font-size:11px;color:#c8e5ef}.video-toggle{color:#d4edf6}
+/* One service row, three cards per view, with touch and keyboard scrolling. */
+.services-section{background:#f3f5f7}
+.service-carousel{position:relative;min-width:0}
+.service-track{display:flex;gap:24px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding-inline:0;padding:1px 1px 12px;scrollbar-width:none;outline-offset:6px}
+.service-track::-webkit-scrollbar{display:none}
+.service-track>.service-card{flex:0 0 calc((100% - 48px)/3);scroll-snap-align:start;display:flex;flex-direction:column;min-width:0;border:1px solid #dfe5ed;border-radius:24px;background:linear-gradient(140deg,#fff,#e7f4fc);box-shadow:none}
+.service-track>.service-card:nth-child(3n+2){background:linear-gradient(140deg,#fff,#ebedf5)}
+.service-track>.service-card:nth-child(3n){background:linear-gradient(140deg,#fff,#e8efff)}
+.service-track .card-media{height:244px;flex:none;background:transparent;padding:22px 28px 10px}
+.service-track .card-media img{height:100%;width:100%;object-fit:contain}
+.service-track .card-media::after{font-size:9px;bottom:8px}
+.service-track .card-body{display:flex;flex:1;flex-direction:column;padding:20px 25px 23px}
+.service-track h3{font-size:20px;min-height:52px;line-height:1.3}
+.service-track .card-body>p{font-size:14px;line-height:1.8;min-height:102px;margin:18px 0 20px}
+.service-track .card-actions{border:0;padding:0;margin:auto 0 0}
+.service-track .details-link{font-size:14px;width:100%;justify-content:space-between;color:#176cc3;min-height:44px}
+.service-carousel-controls{pointer-events:none;position:absolute;inset:0 -23px 0;display:flex;justify-content:space-between;align-items:center}
+.service-carousel-controls button{pointer-events:auto;width:48px;height:48px;display:grid;place-items:center;border:1px solid #dfe5ed;background:#fff;color:#13375e;border-radius:50%;box-shadow:0 8px 17px #1f3a5d12;transition:background .2s,opacity .2s}
+.service-carousel-controls button:hover{background:#e7f4ff}
+.service-carousel-controls button:disabled{visibility:hidden;pointer-events:none}
+.service-carousel-hint{display:flex;justify-content:center;align-items:center;gap:8px;font-size:11px;margin-top:14px;color:#536472}
+html:not(.js) .service-carousel-controls{display:none}
+.google-reviews-mark{width:148px;height:auto;margin-bottom:25px}
+/* The contact shortcut appears after the initial screen and follows the scroll. */
+.floating-whatsapp{position:fixed;right:28px;bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:25;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:14px 20px;border-radius:40px;background:#176cc3;color:#fff;font-size:13px;font-weight:800;box-shadow:0 8px 26px #0a396b40;border:1px solid #ffffff60;transition:transform .25s,opacity .25s,background .2s}
+.js .floating-whatsapp:not(.is-visible){opacity:0;visibility:hidden;pointer-events:none;transform:translateY(18px)}
+.floating-whatsapp:hover{background:#125cab;transform:translateY(-2px)}
+.floating-whatsapp:focus-visible{outline:3px solid #25c5ff;outline-offset:4px}
+.site-footer{padding-bottom:84px}
+@media(max-width:1199px){.service-track .card-body{padding-inline:20px}.service-track h3{font-size:18px}.service-track .card-body>p{font-size:13px}.service-track .card-media{height:220px}}
+@media(max-width:1023px){.service-track>.service-card{flex-basis:calc((100% - 24px)/2)}.service-track .card-media{height:235px}.service-track h3{font-size:20px}.service-track .card-body>p{min-height:77px}.service-carousel-controls{inset-inline:-19px}.service-carousel-controls button{width:44px;height:44px}.hero-with-media .hero-inner{min-height:570px}.phone-frame{width:235px}}
+@media(max-width:767px){.hero-with-media .hero-inner{min-height:0;padding-block:32px 28px;gap:28px}.phone-frame{width:190px;padding:6px;border-radius:31px;transform:rotateX(2deg) rotateY(-13deg) rotateZ(4deg)}.phone-screen{border-radius:25px}.phone-frame::before{border-radius:28px}.phone-camera-island{width:57px;height:15px;top:7px}.phone-camera-island>span{width:6px;height:6px;top:5px;right:6px}.hero-phone-stage{gap:14px}.hero-phone-stage figcaption{font-size:10px}.phone-home{bottom:6px}.phone-side-power{right:-9px;top:88px;height:43px}.phone-side-volume{top:69px;height:45px}.floating-whatsapp{right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:56px;height:56px;padding:14px}.floating-whatsapp span{display:none}.google-reviews-mark{width:132px}.service-track{gap:18px;padding-bottom:6px;scroll-padding-right:20px}.service-track>.service-card{flex-basis:88%;border-radius:22px}.service-track .card-media{height:228px;padding:22px 30px 10px}.service-track .card-body{padding:20px 24px 23px}.service-track h3{font-size:20px;min-height:52px}.service-track .card-body>p{min-height:100px}.service-carousel-controls{position:static;justify-content:center;gap:16px;inset:auto;margin-top:16px}.service-carousel-controls button:disabled{visibility:visible;opacity:.35}.service-carousel-hint{font-size:10px}.site-footer{padding-bottom:80px}}
+@media(prefers-reduced-motion:reduce){.phone-frame{transform:none}.floating-whatsapp{transition:none}.service-track{scroll-behavior:auto}}
+@media print{.floating-whatsapp,.service-carousel-controls,.elegant-light-field{display:none}.elegant-dark-pattern{background:white}.service-track{display:grid;grid-template-columns:repeat(3,1fr);overflow:visible}.service-track>.service-card{min-width:0}.phone-frame{box-shadow:none}}

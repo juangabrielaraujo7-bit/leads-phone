@@ -129,38 +129,6 @@ export const services: Service[] = [
     ]
   },
   {
-    "slug": "aparelho-molhado",
-    "name": "Recuperação de aparelho molhado",
-    "short": "Seu celular teve contato com líquido? Consulte a avaliação dos danos e das possibilidades de recuperação.",
-    "title": "Avaliação de celular molhado em Sorocaba",
-    "description": "Seu celular molhou? A LEADS PHONE, em Sorocaba, avalia os danos e as possibilidades de recuperação. Fale com a equipe pelo WhatsApp.",
-    "intro": "Depois do contato com líquido, o aparelho precisa de avaliação. Conte o que aconteceu para receber a orientação adequada.",
-    "icon": "droplet",
-    "image": "contato-com-liquido",
-    "alt": "Ilustração de um celular que teve contato com líquido",
-    "symptoms": [
-      "Celular sem ligar após contato com líquido",
-      "Falhas na imagem, no toque ou no som",
-      "Desligamentos e comportamento irregular"
-    ],
-    "explanation": "A equipe avalia os componentes afetados e as condições do aparelho antes de indicar procedimentos. A viabilidade, o prazo e os custos dependem da extensão dos danos identificados.",
-    "note": "A recuperação do aparelho e dos dados não é garantida. Não conecte o celular ao carregador após o contato com líquido e procure orientação técnica.",
-    "faqs": [
-      {
-        "q": "Todo aparelho molhado pode ser recuperado?",
-        "a": "Não. O tipo de líquido, o tempo decorrido e os componentes afetados influenciam a possibilidade de reparo. É necessária uma avaliação."
-      },
-      {
-        "q": "A avaliação tem algum custo?",
-        "a": "Consulte previamente as condições do diagnóstico. O orçamento do reparo é sem compromisso."
-      }
-    ],
-    "related": [
-      "reparo-de-placa",
-      "camera-audio-microfone"
-    ]
-  },
-  {
     "slug": "camera-audio-microfone",
     "name": "Câmeras e componentes de áudio",
     "short": "Fotos sem foco, som falhando ou dificuldade nas chamadas? Encontre orientação para o reparo.",
@@ -225,4 +193,3 @@ export const services: Service[] = [
     ]
   }
 ];
-

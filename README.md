@@ -19,7 +19,7 @@ npm run verify
 ## Conteúdo
 
 - `src/data/business.ts`: contato, endereço, horário sob consulta, aviso da mudança, vídeo, perguntas e exemplos de antes/depois.
-- `src/data/services.ts`: sete serviços, sinais, explicações, dúvidas e relações entre páginas.
+- `src/data/services.ts`: seis serviços, sinais, explicações, dúvidas e relações entre páginas.
 - `src/data/reviews.ts`: depoimentos fictícios, todos identificados como exemplo ilustrativo.
 - `src/pages/index.astro`: categorias de acessórios provisórias.
 - `public/media/`: vídeo H.264 otimizado, sem áudio, 540 × 960, com poster WebP.
@@ -37,3 +37,6 @@ Destino: `juangabrielaraujo7-bit/leads-phone`, branch `main`. Configuração est
 Os arquivos otimizados já estão versionados. A rotina opcional `npm run prepare:assets` usa a logo original local e gera logo, favicon, imagem social, ilustração de tampa e espaços de antes/depois. O arquivo original não é necessário para executar ou publicar o site.
 
 Vídeo preparado com FFmpeg: escala proporcional 540 × 960, H.264, CRF 27, sem áudio, pixels yuv420p e faststart. Poster extraído no segundo 2. Arquivo original preservado localmente.
+
+## Hero e navegação dos serviços
+O efeito de fundo fornecido em React foi adaptado para `src/components/ui/ElegantDarkPattern.astro`, com estilos em `src/styles/refinements.css`. Usa slots e classes nativas do Astro; não requer React, shadcn ou Tailwind. As cinco faixas são CSS local, sem pontos nem textura remota. Os componentes do projeto permanecem em `src/components`; os recursos de UI reutilizáveis ficam em `src/components/ui`. `ServiceCarousel.astro` controla a fileira de seis serviços. O botão flutuante de WhatsApp aparece após 240px de rolagem.

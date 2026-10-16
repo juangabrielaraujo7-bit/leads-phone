@@ -12,13 +12,13 @@ try{
  const context=await browser.newContext({viewport:{width:1440,height:1000},deviceScaleFactor:1});
  const page=await context.newPage();
  page.on('pageerror',e=>report.errors.push(e.message));
- const slugs=await readdir('dist/servicos');assert.equal(slugs.length,7);
+ const slugs=await readdir('dist/servicos');assert.equal(slugs.length,6);assert(!slugs.includes('aparelho-molhado'));
  const routes=['/',...slugs.map(s=>`/servicos/${s}/`),'/privacidade/'];
  for(const route of routes){
   assert.equal((await page.goto(origin+route,{waitUntil:'load'})).status(),200);
   assert.equal(await page.locator('h1').count(),1);assert((await page.title()).includes('LEADS PHONE'));
   assert.equal(await page.locator('meta[name=robots]').getAttribute('content'),'noindex, follow');
-  const body=await page.locator('body').innerText();assert(!/kacell|99749|1179|tablets|troca apenas do vidro|orçamento gratuito/i.test(body),route);
+  const body=await page.locator('body').innerText();assert(!/kacell|99749|1179|tablets|troca apenas do vidro|orçamento gratuito|aparelho molhado/i.test(body),route);
   for(const json of await page.locator('script[type="application/ld+json"]').allTextContents()){const obj=JSON.parse(json);assert(!/AggregateRating|"Review"|ratingValue/.test(json));assert(obj);}
   await page.locator('img').evaluateAll(async imgs=>{await Promise.all(imgs.map(async img=>{img.loading='eager';await img.decode();}));});
   const links=await page.locator('a').evaluateAll(els=>els.map(a=>a.getAttribute('href')));
@@ -39,10 +39,19 @@ try{
  await page.goto(origin);await page.waitForFunction(()=>{const v=document.querySelector('video');return v.readyState>=2&&v.currentTime>0;});
  const video=await page.locator('video').evaluate(v=>({width:v.videoWidth,height:v.videoHeight,duration:v.duration,muted:v.muted,loop:v.loop,playsInline:v.playsInline,controls:v.controls,poster:v.poster,time:v.currentTime,transform:getComputedStyle(v.closest('.phone-frame')).transform}));assert(video.muted&&video.loop&&video.playsInline&&!video.controls);assert.equal(video.width,540);assert.equal(video.height,960);assert(video.duration>13&&video.duration<14);assert.notEqual(video.transform,'none');
  await page.locator('[data-video-toggle]').click();assert(await page.locator('video').evaluate(v=>v.paused));await page.locator('[data-video-toggle]').click();await page.waitForFunction(()=>!document.querySelector('video').paused);
+ const floating=page.locator('[data-floating-whatsapp]');assert(!(await floating.isVisible()));
+ await page.locator('#servicos').scrollIntoViewIfNeeded();await page.waitForFunction(()=>document.querySelector('[data-floating-whatsapp]').classList.contains('is-visible'));assert(await floating.isVisible());assert((await floating.getAttribute('href')).includes('5515988163646'));
+ assert.equal(await page.locator('.service-track .service-card').count(),6);
+ await page.locator('[data-service-direction="1"]').click();await page.waitForFunction(()=>document.querySelector('.service-track').scrollLeft>30);
+ const track=page.locator('.service-track');const scrollBefore=await track.evaluate(t=>t.scrollLeft);await track.focus();await page.keyboard.press('ArrowRight');await page.waitForFunction(before=>document.querySelector('.service-track').scrollLeft>before+20,scrollBefore);
+ await page.setViewportSize({width:1440,height:900});await page.goto(origin);const row=await page.locator('.service-track').evaluate(t=>{const bounds=t.getBoundingClientRect();return [...t.querySelectorAll('.service-card')].filter(c=>{const r=c.getBoundingClientRect();return r.left>=bounds.left-2&&r.right<=bounds.right+2}).length;});assert.equal(row,3);
+ assert.equal(await page.locator('.elegant-streak').count(),5);assert.equal(await page.locator('.google-reviews-mark').count(),1);
+ report.interaction.push('fileira de seis serviços: setas e teclado','três cards no desktop','WhatsApp flutuante ao rolar','fundo com faixas sem pontos');
  await page.emulateMedia({reducedMotion:'reduce'});await page.reload();assert(await page.locator('video').evaluate(v=>v.paused));
  report.interaction.push('menu mobile','FAQ','carrossel','galeria e Escape','pausa dos depoimentos',{video},'pausa do vídeo','movimento reduzido');
  const nojs=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});const fallback=await nojs.newPage();await fallback.goto(origin);assert(await fallback.locator('.main-nav').isVisible());await nojs.close();
  assert.equal((await page.request.get(origin+'/pagina-inexistente/')).status(),404);
+ assert.equal((await page.request.get(origin+'/servicos/aparelho-molhado/')).status(),404);
  assert((await (await page.request.get(origin+'/robots.txt')).text()).includes('Disallow: /'));
  assert(!/kacell|99749|1179/i.test(await readFile('dist/index.html','utf8')));
  await writeFile('artifacts/verification.json',JSON.stringify(report,null,2));

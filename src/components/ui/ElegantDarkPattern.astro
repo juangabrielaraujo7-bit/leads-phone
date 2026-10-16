@@ -1,0 +1,14 @@
+---
+interface Props { class?: string }
+const { class: className } = Astro.props;
+---
+<div class:list={['elegant-dark-pattern', className]}>
+  <div class="elegant-light-field" aria-hidden="true">
+    <div class="elegant-streak elegant-streak-one"></div>
+    <div class="elegant-streak elegant-streak-two"></div>
+    <div class="elegant-streak elegant-streak-three"></div>
+    <div class="elegant-streak elegant-streak-four"></div>
+    <div class="elegant-streak elegant-streak-five"></div>
+  </div>
+  <div class="elegant-pattern-content"><slot/></div>
+</div>

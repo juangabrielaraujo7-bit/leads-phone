@@ -6,9 +6,11 @@ import '../styles/social-proof.css';
 import '../styles/hero.css';
 import '../styles/result-carousel.css';
 import '../styles/brand.css';
+import '../styles/refinements.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { business, presentation } from '../data/business';
+import Icon from '../components/Icon.astro';
+import { business, presentation, whatsappUrl } from '../data/business';
 interface Props { title: string; description: string; breadcrumbs?: {name: string; path: string}[]; noindex?: boolean }
 const {title, description, breadcrumbs, noindex = false} = Astro.props;
 const indexable = !presentation && import.meta.env.INDEX_SITE === 'true' && !!Astro.site && !noindex;
@@ -29,5 +31,5 @@ if(breadcrumbs && Astro.site) schemas.push({'@context':'https://schema.org','@ty
     <meta name="twitter:card" content="summary_large_image"/>
     {schemas.map(schema => <script is:inline type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g,'\\u003c')}/>)}
   </head>
-  <body id="top"><a class="skip-link" href="#conteudo">Ir para o conteúdo</a><Header/><main id="conteudo"><slot/></main><Footer/><script src="../scripts/site.ts"/></body>
+  <body id="top"><a class="skip-link" href="#conteudo">Ir para o conteúdo</a><Header/><main id="conteudo"><slot/></main><Footer/><a class="floating-whatsapp" data-floating-whatsapp data-event="whatsapp_click" data-position="flutuante" href={whatsappUrl()} target="_blank" rel="noopener noreferrer" aria-label="Pedir orçamento pelo WhatsApp da LEADS PHONE"><Icon name="brand-whatsapp" size={26}/><span>Fale com a gente</span></a><script src="../scripts/site.ts"/></body>
 </html>

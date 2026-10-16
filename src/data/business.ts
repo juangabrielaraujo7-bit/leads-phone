@@ -20,7 +20,6 @@ export const homeFaq = [
   {q:'Meu celular pode ficar pronto no mesmo dia?',a:'Alguns reparos podem ser feitos no mesmo dia, conforme avaliação e disponibilidade de peças. A equipe confirma o prazo para o seu caso.'},
   {q:'Posso parcelar no cartão?',a:'Sim. Consulte a quantidade de parcelas e as condições disponíveis para o seu orçamento.'},
   {q:'Quais marcas são atendidas?',a:'Apple/iPhone, Samsung, Motorola, Xiaomi, Realme e Asus. Informe o modelo para consultar a disponibilidade do serviço e das peças.'},
-  {q:'Um aparelho molhado tem recuperação garantida?',a:'Não. A possibilidade de recuperação depende da extensão dos danos e da avaliação técnica. Conte à equipe quando ocorreu o contato com líquido e como o celular está se comportando.'},
   {q:'Onde fica a loja e quais são os horários?',a:`Endereço informado: ${fullAddress}. A empresa está em mudança para uma loja maior; confirme o local de atendimento antes de ir. Consulte os horários pelo WhatsApp.`},
 ];
 export { selectedReviews as reviews } from './reviews';

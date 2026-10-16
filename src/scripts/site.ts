@@ -111,3 +111,22 @@ if(video && videoToggle){
   document.addEventListener('visibilitychange',()=>{if(document.hidden)video.pause();else if(!requestedPause)play();});
   if(reduced.matches)video.pause();sync();
 }
+
+document.querySelectorAll<HTMLElement>('[data-service-carousel]').forEach(host=>{
+  const track=host.querySelector<HTMLElement>('.service-track');
+  const previous=host.querySelector<HTMLButtonElement>('[data-service-direction="-1"]');
+  const next=host.querySelector<HTMLButtonElement>('[data-service-direction="1"]');
+  if(!track||!previous||!next)return;
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+  const update=()=>{previous.disabled=track.scrollLeft<4;next.disabled=track.scrollLeft+track.clientWidth>=track.scrollWidth-4;};
+  const move=(direction:number)=>{const card=track.querySelector<HTMLElement>('.service-card');const gap=parseFloat(getComputedStyle(track).columnGap)||0;const step=(card?.offsetWidth||track.clientWidth)+gap;track.scrollBy({left:direction*step,behavior:reduced.matches?'instant':'smooth'});};
+  previous.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));
+  track.addEventListener('scroll',update,{passive:true});
+  track.addEventListener('keydown',event=>{if(event.target!==track)return;if(event.key==='ArrowLeft'||event.key==='ArrowRight'){event.preventDefault();move(event.key==='ArrowRight'?1:-1);}});
+  new ResizeObserver(update).observe(track);update();
+});
+const floatingWhatsApp=document.querySelector<HTMLElement>('[data-floating-whatsapp]');
+if(floatingWhatsApp){
+  const updateFloating=()=>{const shown=scrollY>240;floatingWhatsApp.classList.toggle('is-visible',shown);floatingWhatsApp.inert=!shown;};
+  window.addEventListener('scroll',updateFloating,{passive:true});updateFloating();
+}

@@ -1,0 +1,15 @@
+---
+import { services } from '../data/services';
+import ServiceCard from './ServiceCard.astro';
+import Icon from './Icon.astro';
+---
+<div class="service-carousel" data-service-carousel role="region" aria-label="Serviços de assistência técnica">
+  <div class="service-track" id="service-track" tabindex="0" aria-label="Deslize para ver os serviços ou use as setas do teclado">
+    {services.map(service=><ServiceCard service={service} row/>)}
+  </div>
+  <div class="service-carousel-controls">
+    <button type="button" data-service-direction="-1" aria-label="Ver serviços anteriores" aria-controls="service-track" disabled><Icon name="arrow-left" size={23}/></button>
+    <button type="button" data-service-direction="1" aria-label="Ver próximos serviços" aria-controls="service-track"><Icon name="arrow-right" size={23}/></button>
+  </div>
+  <p class="service-carousel-hint">Deslize para conhecer todos os serviços <Icon name="arrows-left-right" size={17}/></p>
+</div>

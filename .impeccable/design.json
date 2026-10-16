@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-16T11:39:55.000Z",
+  "generatedAt": "2026-10-16T13:39:38.986Z",
   "title": "Design System: LEADS PHONE",
   "extensions": {
     "colorMeta": {
@@ -168,6 +168,156 @@
           "oklch(95% 0.015 250)"
         ],
         "rampPurpose": "Faixa exploratória sintetizada para o painel; não substitui as cores normativas nem autoriza novos fundos de seção."
+      },
+      "hero-black": {
+        "displayName": "Preto exclusivo do hero",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.015 250)",
+          "oklch(26% 0.015 250)",
+          "oklch(38% 0.015 250)",
+          "oklch(49% 0.015 250)",
+          "oklch(61% 0.015 250)",
+          "oklch(72% 0.015 250)",
+          "oklch(84% 0.015 250)",
+          "oklch(95% 0.015 250)"
+        ],
+        "rampPurpose": "Faixa exploratória do painel; preserve os tokens normativos."
+      },
+      "hero-cyan": {
+        "displayName": "Ciano do hero",
+        "role": "secondary",
+        "tonalRamp": [
+          "oklch(15% 0.12 230)",
+          "oklch(26% 0.12 230)",
+          "oklch(38% 0.12 230)",
+          "oklch(49% 0.12 230)",
+          "oklch(61% 0.12 230)",
+          "oklch(72% 0.12 230)",
+          "oklch(84% 0.12 230)",
+          "oklch(95% 0.12 230)"
+        ],
+        "rampPurpose": "Faixa exploratória do painel; preserve os tokens normativos."
+      },
+      "hero-cyan-hover": {
+        "displayName": "Ciano de hover",
+        "role": "secondary",
+        "tonalRamp": [
+          "oklch(15% 0.12 230)",
+          "oklch(26% 0.12 230)",
+          "oklch(38% 0.12 230)",
+          "oklch(49% 0.12 230)",
+          "oklch(61% 0.12 230)",
+          "oklch(72% 0.12 230)",
+          "oklch(84% 0.12 230)",
+          "oklch(95% 0.12 230)"
+        ],
+        "rampPurpose": "Faixa exploratória do painel; preserve os tokens normativos."
+      },
+      "hero-cyan-ink": {
+        "displayName": "Texto sobre ciano",
+        "role": "secondary",
+        "tonalRamp": [
+          "oklch(15% 0.12 230)",
+          "oklch(26% 0.12 230)",
+          "oklch(38% 0.12 230)",
+          "oklch(49% 0.12 230)",
+          "oklch(61% 0.12 230)",
+          "oklch(72% 0.12 230)",
+          "oklch(84% 0.12 230)",
+          "oklch(95% 0.12 230)"
+        ],
+        "rampPurpose": "Faixa exploratória do painel; preserve os tokens normativos."
+      },
+      "streak-cyan": {
+        "displayName": "Feixes ciano",
+        "role": "secondary",
+        "tonalRamp": [
+          "oklch(15% 0.12 230)",
+          "oklch(26% 0.12 230)",
+          "oklch(38% 0.12 230)",
+          "oklch(49% 0.12 230)",
+          "oklch(61% 0.12 230)",
+          "oklch(72% 0.12 230)",
+          "oklch(84% 0.12 230)",
+          "oklch(95% 0.12 230)"
+        ],
+        "rampPurpose": "Faixa exploratória do painel; preserve os tokens normativos."
+      },
+      "service-surface": {
+        "displayName": "Superfície de serviços",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.015 250)",
+          "oklch(26% 0.015 250)",
+          "oklch(38% 0.015 250)",
+          "oklch(49% 0.015 250)",
+          "oklch(61% 0.015 250)",
+          "oklch(72% 0.015 250)",
+          "oklch(84% 0.015 250)",
+          "oklch(95% 0.015 250)"
+        ],
+        "rampPurpose": "Faixa exploratória do painel; preserve os tokens normativos."
+      },
+      "service-line": {
+        "displayName": "Borda dos serviços",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.015 250)",
+          "oklch(26% 0.015 250)",
+          "oklch(38% 0.015 250)",
+          "oklch(49% 0.015 250)",
+          "oklch(61% 0.015 250)",
+          "oklch(72% 0.015 250)",
+          "oklch(84% 0.015 250)",
+          "oklch(95% 0.015 250)"
+        ],
+        "rampPurpose": "Faixa exploratória do painel; preserve os tokens normativos."
+      },
+      "service-tint-blue": {
+        "displayName": "Gradiente azul claro",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.015 250)",
+          "oklch(26% 0.015 250)",
+          "oklch(38% 0.015 250)",
+          "oklch(49% 0.015 250)",
+          "oklch(61% 0.015 250)",
+          "oklch(72% 0.015 250)",
+          "oklch(84% 0.015 250)",
+          "oklch(95% 0.015 250)"
+        ],
+        "rampPurpose": "Faixa exploratória do painel; preserve os tokens normativos."
+      },
+      "service-tint-lilac": {
+        "displayName": "Gradiente lilás",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.015 250)",
+          "oklch(26% 0.015 250)",
+          "oklch(38% 0.015 250)",
+          "oklch(49% 0.015 250)",
+          "oklch(61% 0.015 250)",
+          "oklch(72% 0.015 250)",
+          "oklch(84% 0.015 250)",
+          "oklch(95% 0.015 250)"
+        ],
+        "rampPurpose": "Faixa exploratória do painel; preserve os tokens normativos."
+      },
+      "service-tint-periwinkle": {
+        "displayName": "Gradiente pervinca",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.015 250)",
+          "oklch(26% 0.015 250)",
+          "oklch(38% 0.015 250)",
+          "oklch(49% 0.015 250)",
+          "oklch(61% 0.015 250)",
+          "oklch(72% 0.015 250)",
+          "oklch(84% 0.015 250)",
+          "oklch(95% 0.015 250)"
+        ],
+        "rampPurpose": "Faixa exploratória do painel; preserve os tokens normativos."
       }
     },
     "typographyMeta": {
@@ -200,7 +350,7 @@
       {
         "name": "service-hover",
         "value": "0 10px 24px #263c1c0a",
-        "purpose": "Sombra discreta apenas no hover do card de serviço."
+        "purpose": "Apenas cards herdados fora do carrossel; carrossel de serviços sem sombra."
       },
       {
         "name": "dropdown",
@@ -209,8 +359,23 @@
       },
       {
         "name": "phone-frame",
-        "value": "8px 16px 25px #063a6c40, inset -3px 0 2px #d6e2ec80, inset 3px 0 2px #d6e2ec60",
+        "value": "1px 0 0 #ebf5ff99,inset 1px 1px 1px #eef7ffcc,inset -2px -1px 2px #09131b,6px 3px 0 #273745,8px 4px 0 #9caebb,10px 7px 9px #000b,0 0 13px #08c9ff9c,0 0 39px #009dff55,0 20px 65px #007bff40",
         "purpose": "Volume concentrado no smartphone."
+      },
+      {
+        "name": "service-controls",
+        "value": "0 8px 17px #1f3a5d12",
+        "purpose": "Setas do carrossel."
+      },
+      {
+        "name": "floating-whatsapp",
+        "value": "0 8px 26px #0a396b40",
+        "purpose": "Contato fixo."
+      },
+      {
+        "name": "hero-cta",
+        "value": "0 5px 22px #00bfff1c",
+        "purpose": "Ação ciano exclusiva do hero."
       }
     ],
     "motion": [
@@ -243,6 +408,11 @@
         "name": "reduced-motion",
         "value": "animation:none!important; transition:none!important",
         "purpose": "Respeita prefers-reduced-motion; o smartphone também perde a rotação."
+      },
+      {
+        "name": "floating-contact",
+        "value": "transform .25s,opacity .25s,background .2s",
+        "purpose": "Aparece após scrollY > 240, inerte enquanto oculto e sem transição com movimento reduzido."
       }
     ],
     "breakpoints": [
@@ -251,7 +421,7 @@
         "value": "359px"
       },
       {
-        "name": "single-service-column-max",
+        "name": "legacy-grid-single-column-max",
         "value": "599px"
       },
       {
@@ -270,7 +440,88 @@
         "name": "wide-min",
         "value": "1500px"
       }
-    ]
+    ],
+    "signatureDetails": {
+      "hero": {
+        "implementation": "ElegantDarkPattern nativo Astro; sem React.",
+        "streakCount": 5,
+        "streakOpacity": 0.2,
+        "streakTransform": "skewX(45deg)",
+        "streakGradient": "linear-gradient(#00cfff,transparent)",
+        "background": "radial-gradient(100% 100% at 0 0,#2e2e2e 0%,#000 100%)",
+        "mask": "radial-gradient(125% 100% at 0 0,#000 0%,#00000039 88.2883%,transparent 100%)",
+        "noDotsOrNoise": true
+      },
+      "phone": {
+        "perspective": "1200px",
+        "widths": [
+          "260px",
+          "235px",
+          "190px"
+        ],
+        "mobileRadii": [
+          "31px",
+          "25px"
+        ],
+        "aspectRatio": "9/16",
+        "fit": "contain",
+        "transform": "rotateX(3deg) rotateY(-15deg) rotateZ(5deg)",
+        "mobileTransform": "rotateX(2deg) rotateY(-13deg) rotateZ(4deg)",
+        "metal": "linear-gradient(110deg,#cbd4dd 0%,#697885 2%,#131c25 5%,#414f5b 49%,#b5c3cf 93%,#1a2937 97%,#8ca1b4 100%)",
+        "glass": "linear-gradient(112deg,#eef8ff13 0%,transparent 23%,transparent 65%,#eef8ff08 79%,#e5f4ff12 100%)",
+        "features": [
+          "Ilha e lente frontal",
+          "Botões laterais",
+          "Antenas",
+          "Reflexos",
+          "Brilho neon ciano",
+          "Vídeo real com pausa"
+        ]
+      },
+      "services": {
+        "count": 6,
+        "removed": "aparelho-molhado",
+        "visibleDesktop": 3,
+        "visibleTablet": 2,
+        "mobileWidth": "88%",
+        "scrollSnap": "x mandatory",
+        "controls": [
+          "Setas",
+          "Toque",
+          "ArrowLeft/ArrowRight"
+        ],
+        "gradients": [
+          "linear-gradient(140deg,#fff,#e7f4fc)",
+          "linear-gradient(140deg,#fff,#ebedf5)",
+          "linear-gradient(140deg,#fff,#e8efff)"
+        ],
+        "controlSizes": [
+          "48px",
+          "44px"
+        ]
+      },
+      "googleReviews": {
+        "position": "Acima do título",
+        "widths": [
+          "148px",
+          "132px"
+        ],
+        "marginBottom": "25px",
+        "disclosure": "Depoimentos fictícios; LEADS PHONE ainda não possui perfil no Google."
+      },
+      "floatingWhatsApp": {
+        "visibleAfter": "240px",
+        "position": "fixed",
+        "right": "28px",
+        "bottom": "calc(24px + env(safe-area-inset-bottom,0px))",
+        "mobileRight": "18px",
+        "mobileBottom": "calc(18px + env(safe-area-inset-bottom,0px))",
+        "mobileSize": "56px",
+        "desktopLabel": "Fale com a gente",
+        "mobileLabelHidden": true,
+        "zIndex": 25
+      }
+    }
   },
   "components": [
     {
@@ -314,12 +565,12 @@
       "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:13px 22px;border:1px solid transparent;border-radius:var(--button-radius,8px);font-family:var(--font,'Manrope Variable',Manrope,Arial,sans-serif);font-size:14px;font-weight:750;line-height:1.4;text-decoration:none;cursor:pointer;transition:background .18s,transform .18s,border-color .18s}.ds-button:active{transform:translateY(1px)}.ds-button:focus-visible{outline:3px solid var(--blue,#176cc3);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}.ds-button{background:var(--ink,#182632);color:white}.ds-button:hover{background:#125cab}"
     },
     {
-      "name": "Service Card",
+      "name": "Service Carousel Card",
       "kind": "card",
-      "refersTo": "service-card",
-      "description": "Estrutura de serviço com mídia ilustrativa, ícone, descrição e ações.",
-      "html": "<article class=\"ds-service\"><div class=\"ds-media\"><svg width=\"70\" height=\"110\" viewBox=\"0 0 70 110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><rect x=\"12\" y=\"4\" width=\"46\" height=\"98\" rx=\"8\"/><path d=\"M28 11h14M30 94h10\"/></svg><span>Ilustração</span></div><div class=\"ds-body\"><div class=\"ds-icon\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><rect x=\"6\" y=\"2\" width=\"12\" height=\"20\" rx=\"2\"/><path d=\"M11 18h2\"/></svg></div><h3>Troca de tela</h3><p>Consulte as opções de reparo para o seu aparelho.</p><div class=\"ds-actions\"><a href=\"#servico\">Ver detalhes</a><a class=\"ds-whatsapp\" href=\"#contato\">WhatsApp</a></div></div></article>",
-      "css": ".ds-service{max-width:360px;overflow:hidden;border:1px solid var(--line,#dbe5ee);border-radius:var(--radius,16px);background:white;color:var(--ink,#182632);font-family:var(--font,Manrope,Arial,sans-serif);transition:border-color .18s,box-shadow .18s}.ds-service:hover{border-color:#8ab4df;box-shadow:0 10px 24px #263c1c0a}.ds-media{height:226px;display:flex;align-items:center;justify-content:center;background:#f0f6fc;position:relative;color:#536472}.ds-media>svg{transition:transform .25s}.ds-service:hover .ds-media>svg{transform:translateY(-3px)}.ds-media>span{position:absolute;bottom:10px;right:12px;font-size:9px}.ds-body{padding:0 25px 24px}.ds-icon{position:relative;display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line,#dbe5ee);border-radius:10px;background:white;color:var(--blue,#176cc3);margin-top:-22px;margin-bottom:19px}.ds-body h3{font-size:20px;font-weight:800;line-height:1.25;letter-spacing:-.035em;margin:0}.ds-body p{font-size:13px;line-height:1.8;color:var(--muted,#536472);margin:13px 0 0;min-height:71px}.ds-actions{display:flex;justify-content:space-between;align-items:center;gap:10px;border-top:1px solid #dbe5ee;margin-top:23px;padding-top:15px}.ds-actions a{display:inline-flex;align-items:center;min-height:44px;color:inherit;text-decoration:none;font-size:12px;font-weight:800}.ds-actions a:hover{text-decoration:underline}.ds-actions .ds-whatsapp{border:1px solid #dbe5ee;background:#f0f6fc;border-radius:6px;padding:9px 10px;color:#1760a8}.ds-whatsapp:hover{background:#e3f0ff;border-color:#8ab4df}.ds-actions a:focus-visible{outline:3px solid var(--blue,#176cc3);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-service,.ds-media>svg{transition:none}.ds-service:hover .ds-media>svg{transform:none}}"
+      "refersTo": "service-carousel-card",
+      "description": "Gradiente claro e uma única ação ao rodapé; três cards por vista no desktop, dois no tablet, 88% no mobile.",
+      "html": "<article class=\"ds-service\"><div class=\"ds-media\"><svg width=\"70\" height=\"110\" viewBox=\"0 0 70 110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><rect x=\"12\" y=\"4\" width=\"46\" height=\"98\" rx=\"8\"/><path d=\"M28 11h14M30 94h10\"/></svg><span>Ilustração</span></div><div class=\"ds-body\"><h3>Troca de tela</h3><p>Consulte as opções de reparo para o seu aparelho.</p><a class=\"ds-details\" href=\"#servico\">Conhecer o serviço <span aria-hidden=\"true\">↗</span></a></div></article>",
+      "css": ".ds-service{display:flex;flex-direction:column;max-width:380px;overflow:hidden;border:1px solid #dfe5ed;border-radius:24px;background:linear-gradient(140deg,#fff,#e7f4fc);color:var(--ink,#182632);font-family:var(--font,Manrope,Arial,sans-serif);box-shadow:none}.ds-media{height:244px;display:flex;align-items:center;justify-content:center;position:relative;padding:22px 28px 10px;color:#536472}.ds-media>span{position:absolute;bottom:8px;right:12px;font-size:9px}.ds-media>svg{transition:transform .25s}.ds-service:hover .ds-media>svg{transform:translateY(-3px)}.ds-body{display:flex;flex:1;flex-direction:column;padding:20px 25px 23px}.ds-body h3{font-size:20px;font-weight:800;line-height:1.3;letter-spacing:-.035em;min-height:52px;margin:0}.ds-body p{font-size:14px;line-height:1.8;color:var(--muted,#536472);margin:18px 0 20px;min-height:102px}.ds-details{display:flex;align-items:center;justify-content:space-between;min-height:44px;margin-top:auto;color:#176cc3;text-decoration:none;font-size:14px;font-weight:800}.ds-details:hover{text-decoration:underline}.ds-details:focus-visible{outline:3px solid #176cc3;outline-offset:5px}@media(max-width:767px){.ds-service{border-radius:22px}.ds-media{height:228px;padding:22px 30px 10px}.ds-body{padding:20px 24px 23px}.ds-body p{font-size:13px;min-height:100px}}@media(prefers-reduced-motion:reduce){.ds-media>svg{transition:none}.ds-service:hover .ds-media>svg{transform:none}}"
     },
     {
       "name": "Illustrative Review",
@@ -335,42 +586,66 @@
       "description": "Navegação branca e compacta com ação principal azul.",
       "html": "<nav class=\"ds-nav\" aria-label=\"Navegação de exemplo\"><a href=\"#servicos\">Serviços</a><a href=\"#resultados\">Antes e depois</a><a href=\"#localizacao\">Localização</a><a class=\"ds-nav-cta\" href=\"#contato\">Falar no WhatsApp</a></nav>",
       "css": ".ds-nav{display:flex;flex-wrap:wrap;align-items:center;gap:clamp(10px,1.5vw,22px);padding:18px;background:white;color:var(--ink,#182632);font-family:var(--font,Manrope,Arial,sans-serif);font-size:12px;font-weight:650}.ds-nav a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;color:inherit}.ds-nav a:hover{color:var(--blue,#176cc3)}.ds-nav .ds-nav-cta{background:var(--blue,#176cc3);color:white;border-radius:8px;padding:10px 15px;min-height:42px;font-weight:750;transition:background .18s}.ds-nav .ds-nav-cta:hover{background:#125cab;color:white}.ds-nav a:focus-visible{outline:3px solid var(--blue,#176cc3);outline-offset:5px}.ds-nav-cta:active{transform:translateY(1px)}@media(prefers-reduced-motion:reduce){.ds-nav .ds-nav-cta{transition:none}}"
+    },
+    {
+      "name": "Hero Cyan Action",
+      "kind": "button",
+      "refersTo": "button-hero",
+      "description": "Ação ciano exclusiva do hero preto.",
+      "html": "<div class=\"ds-hero-preview\"><button class=\"ds-hero-action\">Falar no WhatsApp</button></div>",
+      "css": ".ds-hero-preview{padding:35px;background:#030609}.ds-hero-action{min-height:50px;padding:13px 22px;border:1px solid #25c5ff;border-radius:8px;background:#25c5ff;color:#061723;box-shadow:0 5px 22px #00bfff1c;font-family:var(--font,Manrope,Arial,sans-serif);font-size:14px;font-weight:750;line-height:1.4;cursor:pointer;transition:background .18s,transform .18s}.ds-hero-action:hover{background:#76dfff}.ds-hero-action:focus-visible{outline:3px solid white;outline-offset:5px}.ds-hero-action:active{transform:translateY(1px)}@media(prefers-reduced-motion:reduce){.ds-hero-action{transition:none}}"
+    },
+    {
+      "name": "Floating WhatsApp",
+      "kind": "button",
+      "refersTo": "floating-whatsapp",
+      "description": "Prévia estática do estado visível; fixo após 240px de rolagem na implementação.",
+      "html": "<a href=\"#contato\" class=\"ds-floating\" aria-label=\"Pedir orçamento pelo WhatsApp\"><svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><path d=\"M3 21l1.65-4.95a9 9 0 1 1 3.3 3.3L3 21\"/><path d=\"M9 9a.5.5 0 0 0 1 0V8a.5.5 0 0 0-1 0v1a6 6 0 0 0 6 6h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1\"/></svg><span>Fale com a gente</span></a>",
+      "css": ".ds-floating{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:14px 20px;border-radius:40px;background:#176cc3;color:#fff;font-family:var(--font,Manrope,Arial,sans-serif);font-size:13px;font-weight:800;text-decoration:none;box-shadow:0 8px 26px #0a396b40;border:1px solid #ffffff60;transition:transform .25s,opacity .25s,background .2s}.ds-floating:hover{background:#125cab;transform:translateY(-2px)}.ds-floating:focus-visible{outline:3px solid #25c5ff;outline-offset:4px}@media(max-width:767px){.ds-floating{width:56px;height:56px;padding:14px}.ds-floating span{display:none}}@media(prefers-reduced-motion:reduce){.ds-floating{transition:none}}"
     }
   ],
   "narrative": {
     "northStar": "Continuidade Kacell, identidade LEADS PHONE",
-    "overview": "A direção é a continuidade visual explicitamente pedida: preservar composição, tipografia, componentes, efeitos e responsividade da base Kacell. A identidade própria aparece na marca LEADS PHONE, na alternância de branco e azul e no material real da assistência. Esta descrição registra a implementação; não propõe uma nova linguagem visual.\n\nO conjunto combina títulos fortes, leitura direta, superfícies claras e seções azuis amplas. O relevo fica concentrado no celular do hero e nos efeitos herdados de carrossel e avaliações. Fotografias, vídeo e rótulos devem conservar seu contexto e sua legibilidade.",
+    "overview": "A direção é a continuidade visual explicitamente pedida: preservar composição, tipografia, componentes, efeitos e responsividade da base Kacell, com os refinamentos posteriores aprovados pelo usuário. A identidade própria aparece na marca LEADS PHONE, nas seções brancas e azuis e no material real da assistência. O hero preto com luz ciano e o carrossel de serviços são exceções específicas aprovadas, não uma substituição geral do sistema.\n\nO conjunto combina títulos fortes, leitura direta, superfícies claras e seções azuis amplas. O hero usa feixes diagonais suaves e um smartphone realista com brilho ciano; serviços usam cards arredondados com gradientes claros em uma única faixa horizontal. Fotografias, vídeo e rótulos devem conservar seu contexto e sua legibilidade.",
     "keyCharacteristics": [
       "Manrope em toda a interface, com títulos pesados e espaçamento compacto entre letras.",
-      "Alternância de seções brancas e azuis; nenhum fundo de seção azul-marinho.",
+      "Seções brancas e azuis, com exceção aprovada do hero preto/ciano e da superfície clara de serviços; nenhum fundo de seção azul-marinho.",
       "Cantos suaves, bordas leves e ícones Tabler de traço fino.",
-      "Vídeo real de manutenção dentro de uma moldura de smartphone.",
+      "Vídeo real de manutenção dentro de um smartphone metálico com reflexos, ilha de câmera e brilho ciano.",
+      "Carrossel horizontal de serviços e contato flutuante responsivo.",
       "Exemplos de apresentação sempre identificados como ilustrativos."
     ],
     "rules": [
       {
         "name": "The Alternating Surfaces Rule",
-        "body": "Preserve a alternância branca/azul existente. O nome legado `dark` no código significa azul da identidade, nunca azul-marinho.",
+        "body": "Preserve as seções brancas e azuis existentes, com as exceções aprovadas do hero preto/ciano e da superfície clara de serviços. O nome legado `dark` continua significando azul da identidade fora do hero, nunca azul-marinho.",
         "section": "colors"
       },
       {
         "name": "The Contrast Rule",
         "body": "Em áreas azuis, use títulos e ícones brancos, texto auxiliar claro e ações principais brancas com texto azul. Em áreas brancas, use texto escuro e ações azuis com texto branco.",
         "section": "colors"
+      },
+      {
+        "name": "The Hero Exception Rule",
+        "body": "Restrinja preto, feixes ciano e CTA ciano ao hero. Os feixes usam gradiente e máscaras; não acrescente pontos, ruído ou textura granulada.",
+        "section": "colors"
       }
     ],
     "dos": [
-      "**Do** preservar composição, Manrope, componentes, ícones Tabler e efeitos herdados da Kacell.",
-      "**Do** manter branco e azul alternados com o contraste definido para cada superfície.",
+      "**Do** preservar Manrope, ícones Tabler e o sistema herdado da Kacell fora dos refinamentos explicitamente aprovados.",
+      "**Do** manter as seções brancas e azuis, reservando preto/ciano ao hero e gradientes claros ao carrossel de serviços.",
       "**Do** manter o vídeo real no smartphone e o texto antes dele no mobile.",
       "**Do** conservar rótulos legíveis de demonstração em resultados, avaliações e acessórios ilustrativos.",
-      "**Do** preservar imagens completas, controles de pausa, foco visível e movimento reduzido."
+      "**Do** preservar imagens completas, controles de pausa, foco visível e movimento reduzido.",
+      "**Do** manter navegação por setas, toque e teclado no carrossel e o contato flutuante responsivo."
     ],
     "donts": [
-      "**Don't** introduzir fundos de seção azul-marinho ou reinterpretar `dark` como uma nova cor escura.",
+      "**Don't** introduzir fundos de seção azul-marinho ou estender a exceção preta do hero às demais seções.",
       "**Don't** substituir o sistema herdado por outro conceito, família tipográfica ou composição.",
       "**Don't** remover rótulos de exemplo ou apresentar avaliações fictícias como prova social real.",
-      "**Don't** espalhar o relevo do smartphone por todos os cards ou recortar imagens para preencher molduras."
+      "**Don't** espalhar o relevo do smartphone por todos os cards ou recortar imagens para preencher molduras.",
+      "**Don't** adicionar pontos ou ruído ao hero, nem transformar a marca Google Reviews em uma alegação de avaliações reais."
     ]
   }
 }
